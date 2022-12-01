@@ -57,8 +57,8 @@ solvePartOne path = do
       total = totalCalories <$> elves
    in pure $ maximum total
 
--- | Find the Elf carrying the most Calories. How many total Calories is that
--- | Elf carrying?
+-- | Find the top three Elves carrying the most Calories. How many Calories are
+-- | those Elves carrying in total?
 solvePartTwo :: FilePath -> IO Int
 solvePartTwo path = do
   lines <- inputLines path
